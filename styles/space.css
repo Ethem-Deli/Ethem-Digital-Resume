@@ -1,0 +1,43 @@
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+#starfield>* {
+    border-radius: 100%;
+    animation: animStar 50s linear infinite;
+}
+
+.smallStars,
+.smallStars .nebula {
+    width: 1px;
+    height: 1px;
+}
+
+.mediumStars,
+.mediumStars .nebula {
+    width: 2px;
+    height: 2px;
+}
+
+.largeStars,
+.largeStars .nebula {
+    width: 3px;
+    height: 3px;
+}
+
+.nebula {
+    position: absolute;
+    top: 2000px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #starfield>* {
+        animation: none;
+    }
+}
