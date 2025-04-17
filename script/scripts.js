@@ -135,3 +135,13 @@
             t.persisted && _()
         })
 }();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const navMenu = document.getElementById(burger.dataset.target);
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      navMenu.classList.toggle('is-active');
+    });
+  });

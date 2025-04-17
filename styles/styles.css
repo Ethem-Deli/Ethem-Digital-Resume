@@ -10,7 +10,6 @@
     --vibrant-orange-color: hsl(21, 70%, 58%);
     --vibrant-blue-color: hsl(197, 70%, 58%);
     --dark-green-color: hsl(144, 28%, 43%);
-
     --bulma-link-text: hsl(233, 82%, 54%);
     --bulma-family-primary: "Exo 2", SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
     --paragraph-font-family: "Source Serif 4", 'Times New Roman', Times, serif;
@@ -874,55 +873,124 @@ cite {
         width: 100%;
     }
 }
+
 /* Message Field Styling */
 .message-field {
-  color: rgb(83, 81, 81);
-  border-color: rgb(227, 227, 227);
-  border-radius: 28px;
-  font-weight: 400;
-  padding: 0.75rem 1rem;
-  width: 100%;
-  box-sizing: border-box;
+    color: rgb(83, 81, 81);
+    border-color: rgb(227, 227, 227);
+    border-radius: 28px;
+    font-weight: 400;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Section Styling */
 #contact-me {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  #contact-me {
-    padding: 1rem;
-  }
-  .message-field {
-    font-size: 1rem;
-  }
-  #contact-me h3 {
-    font-size: 1.25rem;
-  }
+    #contact-me {
+        padding: 1rem;
+    }
+
+    .message-field {
+        font-size: 1rem;
+    }
+
+    #contact-me h3 {
+        font-size: 1.25rem;
+    }
 }
 
 /* Smooth Scroll */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Download CV Button */
 .download-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 12px 20px;
-  background-color: #ff9900;
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
+
 .download-btn:hover {
-  background-color: #00e60c;
+    background-color: #00e60c;
+}
+
+/* === NAVBAR BASE === */
+.navbar {
+    background-color: transparent;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* === BRAND TEXT === */
+.navbar-item strong {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fdfdfd;
+    letter-spacing: 1px;
+}
+
+/* === NAVBAR MENU ITEMS === */
+.navbar-item {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.navbar-item:hover {
+    color: #f59e0b !important;
+    /* vibrant orange */
+    background-color: transparent !important;
+}
+
+/* === HAMBURGER ICON === */
+.navbar-burger {
+    color: white;
+    border: none;
+    background: none;
+}
+
+.navbar-burger:hover {
+    color: #f59e0b;
+}
+
+/* === ACTIVE STATE === */
+.navbar-burger.is-active span,
+.navbar-menu.is-active {
+    color: #f59e0b;
+}
+
+/* === MOBILE MENU === */
+@media (max-width: 1024px) {
+    .navbar-menu {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-item {
+        display: block;
+        padding: 0.75rem 1rem;
+    }
 }

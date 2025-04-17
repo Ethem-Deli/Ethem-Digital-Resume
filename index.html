@@ -2,147 +2,154 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethem Deli — Ethem Deli :: Web & Computer Programmer </title>
-    <meta name="description" content="Ethem Deli is a best student in web & computer programmer.">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethem Deli — Ethem Deli :: Web & Computer Programmer</title>
+    <meta name="description"
+        content="Ethem Deli's portfolio as a web and computer programmer, showcasing projects, skills, and a passion for technology. Connect to view his CV and contact information.">
     <meta property="og:url" content="https://ethemdeli.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ethem Deli">
     <meta property="og:description" content="Ethem Deli is.">
-    <meta property="og:image" content=".jpeg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="ethemdeli.com">
-    <meta property="twitter:url" content="https://ethemdeli.com">
-    <meta name="twitter:title" content="Ethem Deli">
-    <meta name="twitter:description" content="Ethem Deli is">
-    <meta name="twitter:image" content="https:jpeg">
+    <meta property="og:image" content="/img/ethem.png">
+
+    <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source
-        +Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/space.css">
-    <link rel="stylesheet" type="text/css" href="styles/all-min.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
-    <script src="script/scripts.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/space.css" />
+    <link rel="stylesheet" href="styles/all-min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="/favicon.png" />
 </head>
 
 <body class="page home">
+
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong class="has-text-white">Ethem Deli</strong>
+            </a>
+            <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+                data-target="mainNavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="mainNavbar" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">Games</a>
+                <a class="navbar-item" href="/speaking/">Projects</a>
+                <a class="navbar-item" href="academic-cv.html">Academic CV</a>
+                <a class="navbar-item" href="/contact/">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Starfield -->
     <section class="hero is-spacey is-full-height is-clipped-hidden">
         <div id="starfield"></div>
-        <div class="hero-head">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand is-hidden-tablet">
-                    <a id="navbar-button" role="button" class="navbar-burger has-text-white" aria-label="menu"
-                        aria-expanded="false">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-            </nav>
-            <div class="container has-text-centered">
-                <a href="/">
-                    <h1 class="mt-4 title is-size-0 is-pale-yellow is-uppercase has-text-weight-bold">Ethem Deli</h1>
-                </a>
-                <h2 class="is-stretched subtitle is-size-4 is-vibrant-orange is-uppercase has-text-weight-bold">
-                    Developer &amp; Student</h2>
-            </div>
-            <nav class="columns is-centered mt-2 is-hidden-mobile" role="navigation" aria-label="main navigation">
-                <a class="space-button mx-2 column is-narrow has-text-centered is-family-primary is-size-5 is-uppercase has-text-weight-bold has-text-white"
-                    href="/">Games</a>
-                <a class="space-button mx-2 column is-narrow has-text-centered is-family-primary is-size-5 is-uppercase has-text-weight-bold has-text-white"
-                    href="/speaking/">Projects</a>
-                <a class="space-button mx-2 column is-narrow has-text-centered is-family-primary is-size-5 is-uppercase has-text-weight-bold has-text-white"
-                    href="academic-cv.html">Academic CV</a>
-                <a class="space-button mx-2 column is-narrow has-text-centered is-family-primary is-size-5 is-uppercase has-text-weight-bold has-text-white"
-                    href="/contact/">Contact</a>
-            </nav>
-        </div>
+
         <div class="hero-body">
-            <div>
-                <main>
-                    <section id="contact-me" class="is-relative px-5-mobile">
-                        <h3
-                            class="is-pale-yellow is-size-5 is-uppercase is-stretched has-text-weight-bold has-text-centered mt-6">
-                            Message Me</h3>
-                        <p class="has-text-white has-text-centered">Send me a direct message. I’d love to hear from you!
-                        </p>
+            <main class="container">
 
-                        <div id="newsletter" class="is-relative px-5-mobile">
-                            <h3
-                                class="is-pale-yellow is-size-5 is-uppercase is-stretched has-text-weight-bold has-text-centered mt-6">
-                            </h3>
-                            <p class="has-text-white has-text-centered"></p>
+                <!-- Intro -->
+                <div class="has-text-centered">
+                    <h1 class="mt-4 title is-size-0 is-pale-yellow is-uppercase has-text-weight-bold">Ethem Deli</h1>
+                    <h2 class="is-stretched subtitle is-size-4 is-vibrant-orange is-uppercase has-text-weight-bold">
+                        Developer &amp; Student
+                    </h2>
+                </div>
 
-                            <form action="https://app.kit.com/forms/7578809/subscriptions"
-                                class="mt-4 seva-form formkit-form" method="post" data-sv-form="7578809"
-                                data-uid="79dec06397" data-format="inline" data-version="5" data-options='{
-                                    "settings": {
-                                      "after_subscribe": {
-                                        "action": "message",
-                                        "success_message": "Thanks! I’ll be in touch soon.",
-                                        "redirect_url": ""
-                                      },
-                                      "analytics": {},
-                                      "modal": {},
-                                      "powered_by": { "show": false },
-                                      "recaptcha": { "enabled": false }
-                                    }
-                                  }'>
-                                <div>
-                                    <ul class="formkit-alert formkit-alert-error" data-element="errors"
-                                        data-group="alert"></ul>
-                                    <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
-                                        <div class="formkit-field">
-                                            <input class="formkit-input styled-input" name="message"
-                                                aria-label="Message" placeholder="your message" required type="text">
-                                        </div>
-                                        <button data-element="submit"
-                                            class="formkit-submit formkit-submit styled-submit">
-                                            <div class="formkit-spinner"></div>
-                                            <span>Send</span>
-                                        </button>
-                                    </div>
+                <!-- Contact Section -->
+                <section id="contact-me" class="is-relative px-5-mobile mt-6">
+                    <h3
+                        class="is-pale-yellow is-size-5 is-uppercase is-stretched has-text-weight-bold has-text-centered mt-6">
+                        Message Me</h3>
+                    <p class="has-text-white has-text-centered">Send me a direct message. I’d love to hear from you!</p>
+
+                    <form action="https://app.kit.com/forms/7578809/subscriptions" class="mt-4 seva-form formkit-form"
+                        method="post" data-sv-form="7578809" data-uid="79dec06397" data-format="inline" data-version="5"
+                        data-options='{
+              "settings": {
+                "after_subscribe": {
+                  "action": "message",
+                  "success_message": "Thanks! I’ll be in touch soon.",
+                  "redirect_url": ""
+                },
+                "analytics": {},
+                "modal": {},
+                "powered_by": { "show": false },
+                "recaptcha": { "enabled": false }
+              }
+            }'>
+                        <div>
+                            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                            <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                                <div class="formkit-field">
+                                    <input class="formkit-input styled-input" name="user-message" aria-label="Message"
+                                        placeholder="Your message" required type="text">
                                 </div>
-                            </form>
+                                <button data-element="submit" class="formkit-submit formkit-submit styled-submit">
+                                    <div class="formkit-spinner"></div>
+                                    <span>Send</span>
+                                </button>
+                            </div>
                         </div>
+                    </form>
+                </section>
 
-                    </section>
-
-                </main>
-            </div>
+            </main>
         </div>
+
+        <!-- Footer -->
         <div class="hero-foot">
             <footer class="section has-background-dark-blue is-relative has-text-white mt-6">
                 <div class="container">
                     <div class="level">
                         <div class="level-left has-text-centered-mobile">
-                            <div class="level-right is-inline-mobile">
-                                <a class="has-text-white is-size-4 mx-2" href="https://www.facebook.com/">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                                <a class="has-text-white is-size-4 mx-2" href="https://www.instagram.com/">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a class="has-text-white is-size-4 mx-2" href="https://www.youtube.com/">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </div>
+                            <a class="has-text-white is-size-6 is-underlined is-uppercase" href="/">Home</a>
+                            <a class="has-text-white is-size-6 is-underlined is-uppercase"
+                                href="academic-cv.html">Academic CV</a>
                         </div>
-                        <div class="container has-text-right">
-                            <p class="is-family-primary is-size-6 has-text-centered-mobile has-text-white">&copy;2025 -
-                                Ethem
-                                Deli</p>
+                        <div class="level-right is-inline-mobile">
+                            <a class="has-text-white is-size-4 mx-2" href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a class="has-text-white is-size-4 mx-2" href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="has-text-white is-size-4 mx-2" href="https://www.youtube.com/" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
+                    <div class="container has-text-right">
+                        <p class="is-family-primary is-size-6 has-text-centered-mobile has-text-white">©2025 - Ethem
+                            Deli</p>
+                    </div>
+                </div>
+
+                <!-- Toggle Stars Button -->
+                <div style="position: fixed; bottom: 1rem; right: 1rem; z-index: 1000;">
+                    <button onclick="toggleStarfield()"
+                        style="padding: 10px 5px; font-weight: bold; border-radius: 8px; border: none; background-color: #ff9900; color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.3); cursor: pointer;">
+                        Toggle Stars ✨
+                    </button>
+                </div>
             </footer>
         </div>
     </section>
+
+    <!-- JavaScript Files -->
+    <script src="script/scripts.js" defer></script>
     <script src="script/space.js" defer></script>
     <script src="script/navbar.js" defer></script>
     <script src="script/final.js" defer></script>
